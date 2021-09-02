@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3P8WqtGPQv8r9w1TXJDej+4kifSMcMI/l9MUeTr9TZjpEJ1cyzC5XpjWDI/R/FJ98OkLTy/hzCbRjCGcmqWLYQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nikit\\source\\repos\\ConsoleLibrary\\ConsoleLibrary\\ConsoleLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nikit\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
+    "C:\\Users\\Nikit\\.nuget\\packages\\npgsql\\5.0.7\\npgsql.5.0.7.nupkg.sha512",
+    "C:\\Users\\Nikit\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
