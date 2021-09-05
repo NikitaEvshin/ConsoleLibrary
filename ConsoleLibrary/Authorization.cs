@@ -17,6 +17,16 @@ namespace ConsoleLibrary
             Login = login;
             Password = password;
         }
+       static public void AuthorizationPerson()
+        {
+            Console.WriteLine("Введите Логин");
+            string Login = Console.ReadLine();
+            Console.WriteLine("Введите пароль");
+            string Password = Console.ReadLine();
+            Authorization authorization = new Authorization(Login, Password);
+            authorization.ComeIn();
+            Console.WriteLine($"Добро пожаловать {Login}");
+        }
         public void ComeIn()
         {
             NpgsqlConnection Connection = new NpgsqlConnection("User ID=user1;Password=changeme;Host=130.193.55.186;Port=5432;Database=tododb;");

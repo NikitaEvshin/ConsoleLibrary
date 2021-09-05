@@ -8,9 +8,37 @@ using System.Threading.Tasks;
 
 namespace ConsoleLibrary
 {
-    public class ActionsLibrary
+    public class LibraryActions
     {
 
+        static public void ChoceActionsInLibrary()
+        {
+            while (true)
+            {
+                Console.WriteLine("1.\t Список книг");
+                Console.WriteLine("2.\t Добавить кнгу");
+                Console.WriteLine("3.\t Выдать книгу студенту");
+                Console.WriteLine("4.\t Принять книгу у студента");
+                string selectedCommandst = Console.ReadLine();
+                int selectedCommand = Convert.ToInt32(selectedCommandst);
+                if (selectedCommand == 1)
+                {
+                    LibraryActions.ListBooks();
+                }
+                if (selectedCommand == 2)
+                {
+                    LibraryActions.AddBook();
+                }
+                if (selectedCommand == 3)
+                {
+                    LibraryActions.GiveBook();
+                }
+                if (selectedCommand == 4)
+                {
+                    LibraryActions.TakeBook();
+                }
+            }
+        }
         static public void ListBooks()
         {
             NpgsqlConnection Connection = new NpgsqlConnection("User ID=user1;Password=changeme;Host=130.193.55.186;Port=5432;Database=tododb;");
